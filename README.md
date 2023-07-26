@@ -1,4 +1,4 @@
-# sayi_tahmin_uygulamasi
+# Sayı Tahmin Oyunu
 
 A new Flutter project.
 
