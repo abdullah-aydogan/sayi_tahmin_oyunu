@@ -5,7 +5,9 @@ import 'SonucEkrani.dart';
 
 class TahminEkrani extends StatefulWidget {
 
-  const TahminEkrani({super.key});
+  int tahminAraligi;
+
+  TahminEkrani({required this.tahminAraligi});
 
   @override
   State<TahminEkrani> createState() => _TahminEkraniState();
@@ -24,7 +26,7 @@ class _TahminEkraniState extends State<TahminEkrani> {
 
     super.initState();
 
-    rastgeleSayi = Random().nextInt(101);
+    rastgeleSayi = Random().nextInt(widget.tahminAraligi + 1);
     print("Rastgele Sayı : $rastgeleSayi");
   }
 

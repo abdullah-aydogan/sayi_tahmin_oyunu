@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sayi_tahmin_uygulamasi/main.dart';
 import 'TahminEkrani.dart';
 
 class SonucEkrani extends StatefulWidget {
@@ -45,7 +46,7 @@ class _SonucEkraniState extends State<SonucEkrani> {
                   backgroundColor: Colors.blue,
                 ),
                 onPressed: () {
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => TahminEkrani()));
+                  Navigator.pop(context);
                 },
               ),
             ),

@@ -31,6 +31,8 @@ class Anasayfa extends StatefulWidget {
 
 class _AnasayfaState extends State<Anasayfa> {
 
+  double ilerleme = 50.0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,6 +52,18 @@ class _AnasayfaState extends State<Anasayfa> {
           children: [
             const Text("Sayı Tahmin Oyunu", style: TextStyle(color: Colors.black54, fontSize: 36)),
             Image.asset("resimler/zar_resim.png"),
+            Text("Tahmin Aralığı : ${ilerleme.toInt()}", style: TextStyle(color: Colors.black54, fontSize: 20)),
+            Slider(
+              max: 100,
+              min: 1,
+              activeColor: Colors.blue,
+              value: ilerleme,
+              onChanged: (double i) {
+                setState(() {
+                  ilerleme = i;
+                });
+              },
+            ),
             SizedBox(
               width: 200,
               height: 50,
@@ -59,7 +73,7 @@ class _AnasayfaState extends State<Anasayfa> {
                   backgroundColor: Colors.blue,
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => TahminEkrani()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => TahminEkrani(tahminAraligi: ilerleme.toInt())));
                 },
               ),
             ),
