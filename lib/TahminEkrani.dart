@@ -84,6 +84,7 @@ class _TahminEkraniState extends State<TahminEkrani> {
                     else {
                       validate = false;
                       kalanHak = kalanHak - 1;
+                      FocusManager.instance.primaryFocus?.unfocus();
                     }
                   });
 
