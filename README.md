@@ -1,6 +1,7 @@
 # Sayı Tahmin Oyunu
 
-A new Flutter project.
+![Screenshot_2023-08-17-18-41-05-50_025d85f98437ce0137f1c995cf43265d](https://github.com/abdullah-aydogan/sayi_tahmin_oyunu/assets/117303457/56f4f1d7-78eb-451f-b9fe-1503a6f56778)
+
 
 ## Getting Started
 
